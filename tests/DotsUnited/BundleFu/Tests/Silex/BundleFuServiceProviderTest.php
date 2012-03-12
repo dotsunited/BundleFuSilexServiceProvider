@@ -62,8 +62,8 @@ class BundleFuServiceProviderTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
 
-        $app->register(new BundleFuServiceProvider());
         $app->register(new TwigServiceProvider());
+        $app->register(new BundleFuServiceProvider());
 
         $app->get('/', function ($name) {
             return 'BundleFuServiceProviderTest';
@@ -79,10 +79,10 @@ class BundleFuServiceProviderTest extends \PHPUnit_Framework_TestCase
     {
         $app = new Application();
 
+        $app->register(new TwigServiceProvider());
         $app->register(new BundleFuServiceProvider(), array(
             'bundlefu.twig.extension' => false
         ));
-        $app->register(new TwigServiceProvider());
 
         $app->get('/', function ($name) {
             return 'BundleFuServiceProviderTest';

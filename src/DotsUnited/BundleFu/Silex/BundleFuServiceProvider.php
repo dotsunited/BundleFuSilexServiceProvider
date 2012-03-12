@@ -33,15 +33,13 @@ class BundleFuServiceProvider implements ServiceProviderInterface
             });
         }
 
-        $app->before(function() use ($app) {
-            if (isset($app['twig'])) {
-                $extension = $app['bundlefu.twig.extension'];
+        if (isset($app['twig'])) {
+            $extension = $app['bundlefu.twig.extension'];
 
-                if ($extension) {
-                    $app['twig']->addExtension($extension);
-                }
+            if ($extension) {
+                $app['twig']->addExtension($extension);
             }
-        });
+        }
 
         if (isset($app['bundlefu.class_path'])) {
             $app['autoloader']->registerNamespace('DotsUnited\\BundleFu', $app['bundlefu.class_path']);
