@@ -34,11 +34,18 @@ class BundleFuServiceProvider implements ServiceProviderInterface
         }
 
         if (isset($app['twig'])) {
-            $extension = $app['bundlefu.twig.extension'];
+            $oldTwig = $app->raw('twig');
+            $app['twig'] = $app->share(function($c) use ($oldTwig, $app) {
+                $twig = $oldTwig($c);
 
-            if ($extension) {
-                $app['twig']->addExtension($extension);
-            }
+                $extension = $app['bundlefu.twig.extension'];
+
+                if ($extension) {
+                    $twig->addExtension($extension);
+                }
+
+                return $twig;
+            });
         }
 
         if (isset($app['bundlefu.class_path'])) {
