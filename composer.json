@@ -4,7 +4,7 @@
     "description": "Silex service provider for BundleFu",
     "keywords": ["silex", "service", "provider", "css", "javascript", "bundling", "asset"],
     "homepage": "https://github.com/dotsunited/BundleFuSilexServiceProvider",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "license": "New BSD",
     "authors": [
         {
