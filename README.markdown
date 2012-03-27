@@ -61,7 +61,7 @@ $app->register(new DotsUnited\BundleFu\Silex\BundleFuServiceProvider(), array(
 
 ### Twig ###
 
-The service provider automatically registers the [BundleFu twig extension](https://github.com/dotsunited/BundleFuTwigExtension) if Twig is available.
+The service provider automatically registers the [BundleFu twig extension](https://github.com/dotsunited/BundleFuTwigExtension) if Twig is available (ensure that you register the BundleFuServiceProvider **after** the TwigServiceProvider in your application).
 
 If do not want the extension to be registered, set `bundlefu.twig.extension` with the value `false` as a parameter:
 
