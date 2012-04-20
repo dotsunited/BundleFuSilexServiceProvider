@@ -19,7 +19,7 @@ You can then use the composer-generated autoloader to access the BundleFuSilexSe
 
 ```php
 <?php
-require 'vendor/.composer/autoload.php';
+require 'vendor/autoload.php';
 ?>
 ```
 
