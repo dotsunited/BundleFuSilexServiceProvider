@@ -18,6 +18,8 @@ use Silex\ServiceProviderInterface;
 
 class BundleFuServiceProvider implements ServiceProviderInterface
 {
+    public function boot(Application $app) {}
+    
     public function register(Application $app)
     {
         $app['bundlefu.factory'] = $app->share(function() use ($app) {
