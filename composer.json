@@ -3,7 +3,7 @@
     "description": "Silex service provider for BundleFu",
     "keywords": ["silex", "service", "provider", "css", "javascript", "bundling", "asset"],
     "homepage": "https://github.com/dotsunited/BundleFuSilexServiceProvider",
-    "license": "New BSD",
+    "license": "MIT",
     "authors": [
         {
             "name": "Jan Sorgalla",

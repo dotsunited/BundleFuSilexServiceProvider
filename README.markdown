@@ -76,4 +76,4 @@ $app->register(new DotsUnited\BundleFu\Silex\BundleFuServiceProvider(), array(
 License
 -------
 
-BundleFuSilexServiceProvider is released under the [New BSD License](https://github.com/dotsunited/BundleFuSilexServiceProvider/blob/master/LICENSE).
+BundleFuSilexServiceProvider is released under the [MIT License](https://github.com/dotsunited/BundleFuSilexServiceProvider/blob/master/LICENSE).
