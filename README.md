@@ -1,7 +1,7 @@
 Silex service provider for BundleFu
 ===================================
 
-[![Build Status](https://secure.travis-ci.org/dotsunited/BundleFuSilexServiceProvider.png?branch=master)](http://travis-ci.org/dotsunited/BundleFuSilexServiceProvider)
+[![Build Status](https://travis-ci.org/dotsunited/BundleFuSilexServiceProvider.svg?branch=master)](http://travis-ci.org/dotsunited/BundleFuSilexServiceProvider)
 
 The BundleFuSilexServiceProvider integrates [BundleFu](https://github.com/dotsunited/BundleFu) into the [Silex micro-framework](http://silex.sensiolabs.org/).
 
